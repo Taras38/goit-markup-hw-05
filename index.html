@@ -34,7 +34,7 @@
         <section class="hero">
             <div class="container hero-flex">
                 <h1 class="hero-text">Effective Solutions for Your Business</h1>
-                <button class="hero-button" type="button">Order Service</button>
+                <button data-modal-open class="hero-button" type="button">Order Service</button>
             </div>
         </section>
         <section class="section">
@@ -342,5 +342,12 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close>close</button>
+            <p class="katya">Катінька я тебе люблю! Ти найкраща в світі!</p>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
