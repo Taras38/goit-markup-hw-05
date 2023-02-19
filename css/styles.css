@@ -8,6 +8,8 @@
 
 :root{
     --l-gra: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+    --l-bgc: transition: color 250ms linear;
+    --l-tcol: transition: color 250ms linear;
 }
 
 p,
@@ -84,6 +86,8 @@ body{
     line-height: 1.5;
     color: #2E2F42;
     letter-spacing: 0.02em;
+    transition: color 250ms linear;
+
 }
 
 .nav-li{
@@ -140,6 +144,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition: color 250ms linear;
 
 }
 
@@ -200,7 +205,7 @@ body{
     border: none;
     border-radius: 4px;
     padding: 16px 32px;
-    
+    transition: background-color 250ms linear;
 }
 
 .hero-button:hover,
@@ -357,6 +362,7 @@ portfolio section */
     align-items: center;
     fill: #f4f4fd;
     background-color: #4D5AE5;
+    transition: background-color 250ms linear;
 }
 
 .people-soc-link:is(:hover, :focus){
@@ -395,10 +401,12 @@ portfolio section */
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: border-color 250ms linear;
 }
 
 .cust-icon{
     fill: #8e8f99 ;
+    transition: fill 250ms linear;
 }
 
 .cust-link:hover,
@@ -472,6 +480,7 @@ portfolio section */
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 250ms linear;
 }
 .footer-item:hover,
 .footer-item:focus{
@@ -523,6 +532,7 @@ portfolio section */
     border: #E7E9FC;
     border-radius: 4%;
     text-align: center;
+    transition: color 250ms linear, background-color 250ms linear, box-shadow 250ms linear;
 }
 
 .button-port{
@@ -552,6 +562,7 @@ portfolio section */
     margin-right: 24px;
     margin-bottom: 48px;
     cursor: pointer;
+    transition: box-shadow 250ms linear;
 }
 
 .photo:is(:hover, :focus){
@@ -592,17 +603,20 @@ portfolio section */
     position: absolute;
     top: 0;
     left: 0;
+   
     width: 100%;
     height: 100%;
     padding: 40px 32px 164px;
     transform: translatey(100%);
-    transition: transform 250ms ease;
+   
     font-family: roboto;
     font-size: 16px;
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em;
     background-color:#4D5AE5;
+    transition:  250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -614,7 +628,7 @@ portfolio section */
     left: 0;
     width: 100%;
     height: 100% ;
-    background-color: rgba(19, 20, 18, 0.5);
+    background-color: rgba(46, 47, 66, 0.4);
 }
 
 .backdrop.is-hidden{
@@ -623,6 +637,8 @@ portfolio section */
 }
 
 .modal{
+    display: flex;
+    justify-content: end;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -631,14 +647,19 @@ portfolio section */
     width: 408px;
     height: 576px;
     padding: 24px 24px;
+    border-radius: 4px;
     background-color: #FFFFFF;
 
 }
 
-.katya{
-    color: red;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.06;
-    text-align: center;
+.close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
