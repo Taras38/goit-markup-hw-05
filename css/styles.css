@@ -87,6 +87,7 @@ body{
     color: #2E2F42;
     letter-spacing: 0.02em;
     transition: color 250ms linear;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -145,6 +146,7 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02em;
     transition: color 250ms linear;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -206,6 +208,7 @@ body{
     border-radius: 4px;
     padding: 16px 32px;
     transition: background-color 250ms linear;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -363,6 +366,7 @@ portfolio section */
     fill: #f4f4fd;
     background-color: #4D5AE5;
     transition: background-color 250ms linear;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .people-soc-link:is(:hover, :focus){
@@ -402,6 +406,7 @@ portfolio section */
     align-items: center;
     justify-content: center;
     transition: border-color 250ms linear;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cust-icon{
@@ -481,6 +486,7 @@ portfolio section */
     justify-content: center;
     align-items: center;
     transition: background-color 250ms linear;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-item:hover,
 .footer-item:focus{
@@ -533,6 +539,7 @@ portfolio section */
     border-radius: 4%;
     text-align: center;
     transition: color 250ms linear, background-color 250ms linear, box-shadow 250ms linear;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-port{
@@ -563,6 +570,7 @@ portfolio section */
     margin-bottom: 48px;
     cursor: pointer;
     transition: box-shadow 250ms linear;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .photo:is(:hover, :focus){
